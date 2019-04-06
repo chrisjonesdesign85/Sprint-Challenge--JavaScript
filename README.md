@@ -38,9 +38,21 @@ A: A function returns a value. A method is similar to a function, but is part of
 
 3. What is closure?
 
+A: Closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function's variables - a scope chain.. it has access to its own scope - variables defined between its curly brackets. It has access to the outer function's variables. it has access to the global variables.
+
 4. Describe the four rules of the 'this' keyword.
+    
+    The four rules presented for determining what this in JavaScript points to boil down to one simple question: What is the calling object?
+    1. Is the function called by new? 
+    2. Is the function called by call(), apply(), or bind(). 
+    3. Is the function called as a method?
+    4. Is the function called in the global scope?
+            - If strict mode is enabled, return undefined.
+            - Otherwise, return the global object (window)
 
 5. Why do we need super() in an extended class?
+    
+    Super is how we mind everything together.
 
 ## Project Set up
 
